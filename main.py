@@ -7,7 +7,7 @@ from sqlalchemy import exc as sqlalchemy_exc
 app = Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///books-collection.db"
-app.config['SECRET_KEY'] = 'your_super_secret_key_change_me'
+app.config['SECRET_KEY'] = 'change_me'
 
 db = SQLAlchemy()
 db.init_app(app)
